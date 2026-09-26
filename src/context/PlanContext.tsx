@@ -28,7 +28,7 @@ export function PlanProvider({ children }: { children: ReactNode }) {
       setPlan(JSON.parse(localStorage.getItem("fitlog-plan") || "[]"));
       setSaved(JSON.parse(localStorage.getItem("fitlog-saved") || "[]"));
     } catch {
-      // corrupted localStorage data, ignore and start fresh
+      
     }
     setLoaded(true);
   }, []);

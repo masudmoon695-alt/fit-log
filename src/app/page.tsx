@@ -22,7 +22,7 @@ export default function Home() {
       .finally(() => setLoading(false));
   }, []);
 
-  // সার্চ + সর্ট
+  
   const shown = workouts
     .filter((w) => {
       const text = (w.name + " " + w.muscleGroups.join(" ")).toLowerCase();
